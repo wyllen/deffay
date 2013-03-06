@@ -285,8 +285,14 @@ HOVER par couleur
 Text Shadow
 /////////////////////////////////////////////////////////////////////
 */
-.tsha-1{
-
+.tsha-1 {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+.tsha-1 a:hover,a..tsha-1:hover {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.tsha-2 {
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 
