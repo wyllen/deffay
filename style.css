@@ -774,6 +774,60 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     margin-bottom: 0.25em;
     margin-left:1em;
 }
+
+/*
+/////////////////////// CONTENT HEBERGEMENTS ////////////////////////
+*/
+    .hebs {
+         margin-left: 1em;
+         padding-top:1em;
+         word-spacing: -0.3em;
+        text-align: center;
+    }
+    .heb {
+        width: 30%;
+        text-align: center;
+        display: inline-block;   
+        border: 5px dashed rgba(0, 0, 0, 0.1);     
+         -webkit-transition: all 200ms ease;
+        -moz-transition: all 200ms ease;
+        -ms-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+        transition: all 200ms ease;
+        margin-right: 1%;
+        margin-bottom: 1em;
+    }
+    .heb:hover{
+         border: 5px dashed rgba(255, 255, 255, 0.1);
+    }
+    .heb-thumb {
+        width: 100%;
+        margin-bottom: 1em;
+        display: inline-block;
+         -webkit-transition: all 200ms ease;
+        -moz-transition: all 200ms ease;
+        -ms-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+        transition: all 200ms ease;
+    }
+    .heb-thumb img {
+        width: 100%;
+          box-shadow: 0 0px 13px 4px rgba(0, 0, 0, 0.23), 0 -1px 0 rgba(255, 255, 255, 0.34), 0 -2px 0 rgba(0, 0, 0, 0.21);
+        display: block;
+        border-radius: 3px;
+        -webkit-transition: all 200ms ease;
+        -moz-transition: all 200ms ease;
+        -ms-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+        transition: all 200ms ease;
+    }
+    .heb:hover img{
+        box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.2), 0 -1px 0 rgba(255, 255, 255, 0.34), 0 -2px 0 rgba(0, 0, 0, 0.21);
+    }
+    .heb:hover .heb-thumb{
+        margin-top:0.5em;
+        width:95%;
+    } 
 /*
 /////////////////////// SIDEBAR ////////////////////////
 */
