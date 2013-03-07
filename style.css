@@ -1029,6 +1029,9 @@ Media queries
             clear: left;
             width: 100%;
         }
+    .heb {
+        width: 45%;
+    }
     }
 
 @media (max-width: 450px) {
@@ -1039,3 +1042,8 @@ Media queries
         width: 100%;
     }
 }
+@media (max-width: 350px) {
+        .heb {
+        width: 95%;
+    }
+    }
