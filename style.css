@@ -796,6 +796,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
         transition: all 200ms ease;
         margin-right: 1%;
         margin-bottom: 1em;
+        vertical-align: top;
     }
     .heb:hover{
          border: 5px dashed rgba(255, 255, 255, 0.1);
