@@ -346,7 +346,10 @@ Largeur de base
     .inner{
         width:940px;
         margin:0 auto;
-        position:relative;
+        position:relative;        
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
     }
     .inner:after{
         content:"";
@@ -372,7 +375,7 @@ Template style
 
 .logo {
     display: block;
-    width: 270px;
+    width: 300px;
     height: 100%;
     text-align: center;
     margin: 0 auto;
@@ -753,6 +756,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     float: left;
     width: 75%;
     padding-right: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 .sidebar {
@@ -788,7 +793,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
         width: 30%;
         text-align: center;
         display: inline-block;   
-        border: 5px dashed rgba(0, 0, 0, 0.1);     
+        border: 3px dashed rgba(0, 0, 0, 0.1);     
          -webkit-transition: all 200ms ease;
         -moz-transition: all 200ms ease;
         -ms-transition: all 200ms ease;
@@ -799,7 +804,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
         vertical-align: top;
     }
     .heb:hover{
-         border: 5px dashed rgba(255, 255, 255, 0.1);
+         border: 3px dashed rgba(255, 255, 255, 0.1);
     }
     .heb-thumb {
         width: 100%;
@@ -829,6 +834,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
         margin-top:0.5em;
         width:95%;
     } 
+
+/*
+/////////////////////// SINGLE HEBERGEMENT ////////////////////////
+*/
+    .heb-gallery-large {
+        margin-left: 1em;
+    }
+    .heb-gallery-large img {
+        width: 100%;
+    }
+    .heb-thumbs {
+        margin-left: 1em;
+        text-align: center;
+    }
+    .heb-thumbs-item {
+        display: inline-block;
+        width: 24%;
+        overflow: hidden;
+    }
+    .heb-thumbs-item img {
+        width: 100%;
+    }
+    .fotorama__thumbs {
+        position: absolute;
+        bottom: 0;
+    }
 /*
 /////////////////////// SIDEBAR ////////////////////////
 */
@@ -1015,7 +1046,8 @@ Media queries
 }
 @media (max-width: 650px) {
         .main-content {
-            width:100%;
+            width: 100%;
+            padding-right: 0;
         }
         .sidebar {
             width: 100%;
